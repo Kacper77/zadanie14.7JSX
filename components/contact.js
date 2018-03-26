@@ -1,23 +1,25 @@
 var Contact = React.createClass({
     propTypes: {
-        item: React.PropTypes.object.isRequired,
+        item: React.PropTypes.object.isRequired
     },
 
     render: function() {
         return ( <
-            div className = { 'contactItem' } >
+            div className = 'contactItem' >
             <
-            img className { 'contactImage' } src = { 'link-do-obrazka.png' }
+            img className = 'contactImage'
+            src = { 'link-do-obrazka.png' }
             /> <
-            p className = { 'contactLabel' } >
+            p className = 'contactLabel' >
             Imię: {
                 this.props.item.firstName
             } <
             /p> <
-            p className = { 'contactLabel' } >
+            p className = 'contactLabel' >
             Nazwisko: { this.props.item.lastName } <
             /p>     <
-            a className = { 'contactEmail' } href = { 'mailto:' + this.props.item.email } > { this.props.item.email } <
+            a className = 'contactEmail'
+            href = { 'mailto:' + this.props.item.email } > { this.props.item.email } <
             /a> < /
             div >
         );
